@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import Layout from "../components/Layout"
-import { header, btn } from "../styles/home.module.css"
+import { header, btn, image } from "../styles/home.module.css"
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
             My Portfolio Projects
           </Link>
         </div>
+        <img className={image} src="/banner.png" alt="site banner" />
       </section>
     </Layout>
   )
