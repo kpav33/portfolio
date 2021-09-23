@@ -3,9 +3,10 @@ import React from "react"
 import Layout from "../components/Layout"
 import { header, btn, image } from "../styles/home.module.css"
 
-export default function Home({ data }) {
+export default function Home() {
+  // If you were using the commented out page query, you would need to destructure { data } from component props
   // console.log(data)
-  const { title, description } = data.site.siteMetadata
+  // const { title, description } = data.site.siteMetadata
 
   return (
     <Layout>
@@ -19,21 +20,21 @@ export default function Home({ data }) {
           </Link>
         </div>
         <img className={image} src="/banner.png" alt="site banner" />
-        <p>
+        {/* <p>
           {title} - {description}
-        </p>
+        </p> */}
       </section>
     </Layout>
   )
 }
 
-export const query = graphql`
-  query SiteInfo {
-    site {
-      siteMetadata {
-        description
-        title
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query SiteInfo {
+//     site {
+//       siteMetadata {
+//         description
+//         title
+//       }
+//     }
+//   }
+// `
