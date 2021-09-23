@@ -28,6 +28,7 @@ p {
     margin: 0 auto;
   }
 
+/* Switch nav with header element? */
 nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
