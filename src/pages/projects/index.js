@@ -5,7 +5,8 @@ import { portfolio, projectsStyle } from "../../styles/projects.module.css"
 
 export default function Projects({ data }) {
   // console.log(data)
-  const projects = data.allMarkdownRemark.nodes
+  const projects = data.projects.nodes
+  const contact = data.contact.siteMetadata.contact
   //console.log(projects)
 
   return (
@@ -23,6 +24,7 @@ export default function Projects({ data }) {
             </Link>
           ))}
         </div>
+        <p>Like what you see? Email me at {contact} for a quote!</p>
       </div>
     </Layout>
   )
@@ -30,7 +32,9 @@ export default function Projects({ data }) {
 
 export const query = graphql`
   query ProjectsPage {
-    allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+    projects: allMarkdownRemark(
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
       nodes {
         frontmatter {
           date
@@ -38,6 +42,12 @@ export const query = graphql`
           stack
           title
         }
+        id
+      }
+    }
+    contact: site {
+      siteMetadata {
+        contact
       }
     }
   }
