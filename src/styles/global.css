@@ -26,7 +26,11 @@ p {
 .layout {
     max-width: 1200px;
     margin: 0 auto;
-  }
+}
+
+.content > section {
+  margin-bottom: 25px;
+}
 
 /* Switch nav with header element? */
 nav {

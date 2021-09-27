@@ -13,6 +13,7 @@ export default function Home({ data }) {
 
   return (
     <Layout>
+      {/* Change name of header section into banner */}
       <section className={header}>
         <div>
           <h2>Design</h2>
@@ -28,6 +29,9 @@ export default function Home({ data }) {
           {title} - {description}
         </p> */}
       </section>
+      <section>About me</section>
+      <section>Featured projects</section>
+      <section>All projects</section>
     </Layout>
   )
 }

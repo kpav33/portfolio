@@ -15,6 +15,8 @@ export default function Navbar() {
 
   return (
     <nav>
+      {/* Use nav only for links, wrap entirety with div and renamed the component into a header */}
+      {/* Turn it into a sticky header? */}
       <h1>{title}</h1>
       <div className="links">
         <Link to="/">Home</Link>
