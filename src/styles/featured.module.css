@@ -1,0 +1,60 @@
+.featured {
+    margin: 0 auto;
+    max-width: 880px;
+    /*padding: 20px 40px;*/
+    display: grid;
+    grid-template: 0.2fr 1fr 1fr / 1fr;
+    grid-gap: 20px;
+
+}
+
+.featured > h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    /* margin-bottom: 20px; */
+    align-self: center;
+}
+
+.featuredProject {
+    background: lightsalmon;
+    padding: 20px 40px;
+    border-radius: 20px;
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+    grid-template-areas: 
+                    "name name"
+                    "description image"
+                    "additional image"
+                    "button image";
+    grid-gap: 20px;
+}
+
+.featuredProject > p {
+    margin: 0;
+}
+
+.name {
+    grid-area: name;
+    text-align: center;
+}
+
+.description {
+    grid-area: description;
+}
+
+.additional {
+    grid-area: additional;
+}
+
+.imageStyle {
+    grid-area: image;
+}
+
+.button {
+    grid-area: button;
+    color: black;
+    width: 150px;
+    padding: 10px;
+    justify-self: center;
+}

@@ -5,6 +5,15 @@ import React from "react"
 import Layout from "../components/Layout"
 import { header, btn, image } from "../styles/home.module.css"
 import { about } from "../styles/about-me.module.css"
+import {
+  featured,
+  featuredProject,
+  name,
+  description,
+  additional,
+  imageStyle,
+  button,
+} from "../styles/featured.module.css"
 
 export default function Home({ data }) {
   // If you were using the commented out page query, you would need to destructure { data } from component props
@@ -45,7 +54,35 @@ export default function Home({ data }) {
           fugit delectus qui, quia enim dicta deserunt minima voluptatum id.
         </p>
       </section>
-      <section>Featured projects</section>
+      <section className={featured}>
+        <h2>Featured Projects</h2>
+        <div className={featuredProject}>
+          <h3 className={name}>Project name</h3>
+          <p className={description}>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ab
+            sit doloremque vero velit quam?
+          </p>
+          <p className={additional}>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ab
+            sit doloremque vero velit quam?
+          </p>
+          <div className={imageStyle}>Project Image</div>
+          <button className={button}>Read More</button>
+        </div>
+        <div className={featuredProject}>
+          <h3 className={name}>Project name</h3>
+          <p className={description}>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ab
+            sit doloremque vero velit quam?
+          </p>
+          <p className={additional}>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ab
+            sit doloremque vero velit quam?
+          </p>
+          <div className={imageStyle}>Project Image</div>
+          <button className={button}>Read More</button>
+        </div>
+      </section>
       <section>All projects</section>
     </Layout>
   )
