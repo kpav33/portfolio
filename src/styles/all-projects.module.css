@@ -1,0 +1,48 @@
+.allProjects {
+    margin: 0 auto;
+    max-width: 1200px;
+    /*padding: 20px 40px;*/
+    display: grid;
+    grid-template: auto / auto;
+    grid-gap: 15px;
+    text-align: center;
+
+}
+
+.allProjects > h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    /* margin-bottom: 20px; */
+    /* align-self: center; */
+}
+
+.allProjects > p {
+    text-align: center;
+}
+
+.projectsGrid {
+    display: grid;
+    grid-template: auto / 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.projectCard {
+    /* align-self: center;
+    justify-self: center; */
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / auto;
+    grid-gap: 10px;
+    border: 2px solid black;
+    padding: 15px 25px;
+    align-content: center;
+}
+
+.projectCard > p{
+    margin: 0;
+}
+
+.projectCard * {
+    align-self: center;
+    justify-self: center;
+}
