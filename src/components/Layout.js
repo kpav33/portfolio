@@ -1,8 +1,36 @@
-import React from "react"
+import React, { useState } from "react"
 import Navbar from "./Navbar"
 import "../styles/global.css"
 
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&")
+}
+
 export default function Layout({ children }) {
+  const [formState, setFormState] = useState({})
+
+  function handleChange(e) {
+    setFormState({ ...formState, [e.target.name]: e.target.value })
+  }
+  console.log(formState)
+
+  function handleSubmit(e) {
+    e.preventDefault()
+    const form = e.target
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...formState,
+      }),
+    })
+      .then(() => console.log("OK"))
+      .catch(error => alert(error))
+  }
+
   return (
     <div className="layout">
       <Navbar />
@@ -20,11 +48,40 @@ export default function Layout({ children }) {
             </p>
             <div>Social media icons</div>
           </div>
-          <form className="contactForm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus magnam, ex vero voluptas corrupti corporis esse
-            molestiae tenetur repellat eos, aliquam rem incidunt odio quis in
-            quas inventore pariatur possimus!
+          <form
+            className="contactForm"
+            name="contact"
+            method="post"
+            //action="/thanks/"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            onSubmit={handleSubmit}
+          >
+            {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+            <input type="hidden" name="form-name" value="contact" />
+            <p hidden>
+              <label>
+                Don’t fill this out:{" "}
+                <input name="bot-field" onChange={handleChange} />
+              </label>
+            </p>
+            <p>
+              <label>
+                Your email:
+                <br />
+                <input type="email" name="email" onChange={handleChange} />
+              </label>
+            </p>
+            <p>
+              <label>
+                Message:
+                <br />
+                <textarea name="message" onChange={handleChange} />
+              </label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
           </form>
         </div>
         <p>Built by John Doe</p>

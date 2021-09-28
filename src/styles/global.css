@@ -87,3 +87,9 @@ footer {
   /* width: 50%; */
   /* align-self: center; */
 }
+
+input, textarea, button {
+  color: black;
+  width: 100%;
+  padding: 10px;
+}
