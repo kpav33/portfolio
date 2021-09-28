@@ -10,6 +10,7 @@ function encode(data) {
 
 export default function Layout({ children }) {
   const [formState, setFormState] = useState({})
+  const [messageSent, setMessageSent] = useState(false)
 
   function handleChange(e) {
     setFormState({ ...formState, [e.target.name]: e.target.value })
@@ -27,7 +28,7 @@ export default function Layout({ children }) {
         ...formState,
       }),
     })
-      .then(() => console.log("OK"))
+      .then(() => setMessageSent(true))
       .catch(error => alert(error))
   }
 
@@ -69,19 +70,31 @@ export default function Layout({ children }) {
               <label>
                 Your email:
                 <br />
-                <input type="email" name="email" onChange={handleChange} />
+                <input
+                  type="email"
+                  name="email"
+                  onChange={handleChange}
+                  required
+                  placeholder="johndoe@example.com"
+                />
               </label>
             </p>
             <p>
               <label>
                 Message:
                 <br />
-                <textarea name="message" onChange={handleChange} />
+                <textarea
+                  name="message"
+                  onChange={handleChange}
+                  required
+                  placeholder="Write your message here..."
+                />
               </label>
             </p>
             <p>
               <button type="submit">Send</button>
             </p>
+            {messageSent && <p>Message sent successfully!</p>}
           </form>
         </div>
         <p>Built by John Doe</p>

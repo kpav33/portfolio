@@ -78,7 +78,7 @@ footer {
 
 .contactText {
   /* To do */
-  /* width: 50%; */
+  width: 100%; /* Remove this width rule */
   /* align-self: center; */
 }
 
@@ -86,10 +86,26 @@ footer {
   /* To do */
   /* width: 50%; */
   /* align-self: center; */
+  display: grid;
+  grid-template: auto / auto;
+  grid-gap: 15px;
+}
+
+.contactForm > p {
+  width: 100%;
+  margin: 0;
 }
 
 input, textarea, button {
   color: black;
   width: 100%;
   padding: 10px;
+}
+
+button {
+  width: 100px;
+}
+
+input, textarea {
+  margin-top: 5px;
 }
