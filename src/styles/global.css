@@ -56,8 +56,34 @@ nav a:hover {
     border-color: white;
 }
 
-footer p {
+/* footer p {
     text-align: center;
     color: #bbb;
     margin: 40px auto;
+} */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  grid-gap: 15px;
+  /* width: 100%; */
+}
+
+.contactText {
+  /* To do */
+  /* width: 50%; */
+  /* align-self: center; */
+}
+
+.contactForm {
+  /* To do */
+  /* width: 50%; */
+  /* align-self: center; */
 }
