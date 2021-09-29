@@ -4,8 +4,8 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Banner from "../components/Banner"
 import About from "../components/About"
+import FeaturedProjects from "../components/FeaturedProjects"
 
-import { about } from "../styles/about-me.module.css"
 import {
   featured,
   featuredProject,
@@ -31,35 +31,7 @@ export default function Home({ data }) {
     <Layout>
       <Banner />
       <About />
-      <section className={featured}>
-        <h2>Featured Projects</h2>
-        <div className={featuredProject}>
-          <h3 className={name}>Project name</h3>
-          <p className={description}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ab
-            sit doloremque vero velit quam?
-          </p>
-          <p className={additional}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ab
-            sit doloremque vero velit quam?
-          </p>
-          <div className={imageStyle}>Project Image</div>
-          <button className={button}>Read More</button>
-        </div>
-        <div className={featuredProject}>
-          <h3 className={name}>Project name</h3>
-          <p className={description}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ab
-            sit doloremque vero velit quam?
-          </p>
-          <p className={additional}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ab
-            sit doloremque vero velit quam?
-          </p>
-          <div className={imageStyle}>Project Image</div>
-          <button className={button}>Read More</button>
-        </div>
-      </section>
+      <FeaturedProjects />
       <section className={allProjects}>
         <h2>All Projects</h2>
         <p>About all projects text</p>
