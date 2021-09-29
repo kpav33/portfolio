@@ -23,7 +23,7 @@ export default function Header() {
       <nav className="links">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
-        <Link to="/">Portfolio Projects</Link>
+        <Link to="/projects">Portfolio Projects</Link>
       </nav>
     </header>
   )
