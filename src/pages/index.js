@@ -1,9 +1,8 @@
-import { graphql, Link } from "gatsby"
-// import Img from "gatsby-image"
-import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
+import { graphql } from "gatsby"
+// import Img from "gatsby-image"
 import Layout from "../components/Layout"
-import { header, btn, image } from "../styles/home.module.css"
+import Banner from "../components/Banner"
 import { about } from "../styles/about-me.module.css"
 import {
   featured,
@@ -28,22 +27,7 @@ export default function Home({ data }) {
 
   return (
     <Layout>
-      {/* Change name of header section into banner */}
-      <section className={header}>
-        <div>
-          <h2>Design</h2>
-          <h3>Develop &amp; Deploy</h3>
-          <p>UX designer &amp; web developer based in Machester.</p>
-          <Link className={btn} to="/projects">
-            My Portfolio Projects
-          </Link>
-        </div>
-        {/* <Img fluid={fluid} /> */}
-        <StaticImage src="../images/banner.png" alt="Banner" />
-        {/* <p>
-          {title} - {description}
-        </p> */}
-      </section>
+      <Banner />
       <section className={about}>
         <h2>About me</h2>
         {/* Maybe add some subheaders depending on the paragraph text */}

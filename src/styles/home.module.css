@@ -1,15 +1,15 @@
-.header {
+.banner {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
     align-items: center;
 }
 
-.header h2 {
+.banner h2 {
     font-size: 4em;
 }
 
-.header h3 {
+.banner h3 {
     font-size: 3em;
     font-weight: 400;
     margin-bottom: 20px;
@@ -24,6 +24,6 @@
     font-weight: 500;
 }
 
-.image {
+/* .image {
     max-width: 100%;
-}
+} */
