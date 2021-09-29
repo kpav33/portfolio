@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import Navbar from "./Navbar"
+import Header from "./Header"
 import "../styles/global.css"
 
 function encode(data) {
@@ -15,7 +15,7 @@ export default function Layout({ children }) {
   function handleChange(e) {
     setFormState({ ...formState, [e.target.name]: e.target.value })
   }
-  console.log(formState)
+  // console.log(formState)
 
   function handleSubmit(e) {
     e.preventDefault()
@@ -34,7 +34,7 @@ export default function Layout({ children }) {
 
   return (
     <div className="layout">
-      <Navbar />
+      <Header />
       <div className="content">{children}</div>
       <footer>
         {/* Create seperate footer component with a contact form and contact information */}
