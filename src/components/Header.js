@@ -13,6 +13,9 @@ export default function Header() {
   `)
   const { title } = data.site.siteMetadata
 
+  // For particle animation background
+  // https://www.npmjs.com/package/react-tsparticles
+
   return (
     <header>
       {/* Turn it into a sticky header? */}
@@ -20,7 +23,7 @@ export default function Header() {
       <nav className="links">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
-        <Link to="/projects">Portfolio Projects</Link>
+        <Link to="/">Portfolio Projects</Link>
       </nav>
     </header>
   )
