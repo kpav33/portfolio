@@ -46,3 +46,10 @@
     align-self: center;
     justify-self: center;
 }
+
+.projectLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}

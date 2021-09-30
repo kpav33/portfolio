@@ -5,12 +5,13 @@ import {
   allProjects,
   projectsGrid,
   projectCard,
+  projectLinks,
 } from "../styles/all-projects.module.css"
 
 export default function AllProjects() {
   const data = useStaticQuery(graphql`
     query ProjectsData {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
         nodes {
           frontmatter {
             title
@@ -55,7 +56,10 @@ export default function AllProjects() {
               style={{ width: "300px", height: "250px" }}
             />
             <p>{project.frontmatter.description}</p>
-            <div>Two buttons for project live and source code link</div>
+            <div className={projectLinks}>
+              <a href={project.frontmatter.liveURL}>Project live</a>
+              <a href={project.frontmatter.sourceCodeURL}>Source code</a>
+            </div>
             <div>
               {project.frontmatter.technologies.map((item, index) => (
                 <div key={index}>{item}</div>

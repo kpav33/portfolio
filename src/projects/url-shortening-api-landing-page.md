@@ -2,7 +2,7 @@
 title: "URL Shortening API Landing Page"
 description: "App description here"
 sourceCodeURL: "https://github.com/kpav33/url-shortening-api-landing-page"
-liveURL: "https://kpav33.github.io/todo-app/"
+liveURL: "https://kpav33.github.io/url-shortening-api-landing-page/"
 technologies: ["React", "Sass"]
 slug: "url-shortening-api-landing-page"
 date: "2021-07-1T00:00:00+00:00"
