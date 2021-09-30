@@ -41,10 +41,10 @@ export default function AllProjects() {
   `)
 
   const { nodes } = data.allMarkdownRemark
-  console.log(nodes)
+  // console.log(nodes)
 
   const [filter, setFilter] = useState("All")
-  console.log(filter)
+  // console.log(filter)
 
   return (
     <section className={allProjects}>
