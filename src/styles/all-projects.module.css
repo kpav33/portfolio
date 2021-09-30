@@ -21,6 +21,21 @@
     text-align: center;
 }
 
+.technologyFilter {
+    max-width: 500px;
+    margin: 0 auto;
+    /* display: grid;
+    grid-template: auto / 1fr 1fr 1fr;
+    grid-gap: 10px; */
+    display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+}
+
+.technologyFilter > button {
+    margin: 5px;
+}
+
 .projectsGrid {
     display: grid;
     grid-template: auto / 1fr 1fr 1fr;
@@ -52,4 +67,11 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+
+.technologyCards {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 5px;
+    /* grid-template: 1fr / 1fr 1fr 1fr; */
 }

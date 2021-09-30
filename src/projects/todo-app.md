@@ -3,7 +3,7 @@ title: "Todo App"
 description: "App description here"
 sourceCodeURL: "https://github.com/kpav33/todo-app"
 liveURL: "https://kpav33.github.io/todo-app/"
-technologies: ["React", "Styled Components", "React testing library"]
+technologies: ["React", "Styled Components", "React Testing Library"]
 slug: "todo-app"
 date: "2021-07-25T00:00:00+00:00"
 image: "../images/thumbs/coffee.png"
