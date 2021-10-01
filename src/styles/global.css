@@ -43,6 +43,11 @@ header {
 header .links {
     display: inline-block;
     text-align: right;
+    z-index: 10;
+}
+
+header > h1 {
+  z-index: 10;
 }
 
 nav a {
@@ -55,6 +60,12 @@ nav a {
 
 nav a:hover {
     border-color: white;
+}
+
+/* PARTICLES */
+.particles {
+  position: absolute;
+  inset: 0px;
 }
 
 /* FOOTER */
