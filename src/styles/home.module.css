@@ -1,12 +1,19 @@
 .banner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* width: 100%; */
+    /* display: grid;
+    grid-template: 1fr / 1fr 1fr;
     grid-gap: 40px;
     align-items: center;
+    justify-content: space-between; */
+    /* justify-items: center; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
 }
 
 .banner h2 {
-    font-size: 4em;
+    font-size: 6em;
 }
 
 .banner h3 {
@@ -24,6 +31,12 @@
     font-weight: 500;
 }
 
-/* .image {
-    max-width: 100%;
-} */
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image {
+    width: 35%;
+} 
