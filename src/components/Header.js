@@ -1,4 +1,5 @@
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import React from "react"
 
 export default function Header() {
@@ -11,19 +12,30 @@ export default function Header() {
       }
     }
   `)
-  const { title } = data.site.siteMetadata
+  // const { title } = data.site.siteMetadata
 
   // For particle animation background
   // https://www.npmjs.com/package/react-tsparticles
 
   return (
-    <header>
+    <header id="top">
       {/* Turn it into a sticky header? */}
-      <h1>{title}</h1>
+      <h1>
+        <AnchorLink to="/">John Doe</AnchorLink>
+      </h1>
       <nav className="links">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Portfolio Projects</Link>
+        <AnchorLink to="/#about" title="About me">
+          About
+        </AnchorLink>
+        <AnchorLink to="/#featured" title="Featured Projects">
+          Featured Projects
+        </AnchorLink>
+        <AnchorLink to="/#allProjects" title="All Projects">
+          All Projects
+        </AnchorLink>
+        <AnchorLink to="/#contact" title="Contact">
+          Contact
+        </AnchorLink>
       </nav>
     </header>
   )

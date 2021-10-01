@@ -77,7 +77,7 @@ export default function FeaturedProjects() {
   console.log(nodes)
 
   return (
-    <section className={featured}>
+    <section className={featured} id="featured">
       <h2>Featured Projects</h2>
       {nodes.map(project => (
         <div className={featuredProject} key={project.id}>

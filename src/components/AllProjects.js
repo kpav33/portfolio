@@ -47,7 +47,7 @@ export default function AllProjects() {
   // console.log(filter)
 
   return (
-    <section className={allProjects}>
+    <section className={allProjects} id="allProjects">
       <h2>All Projects</h2>
       <p>About all projects text</p>
       <div className={technologyFilter}>

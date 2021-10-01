@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 function encode(data) {
   return Object.keys(data)
@@ -32,7 +33,7 @@ export default function Footer() {
 
   return (
     <footer>
-      <div className="contact">
+      <div className="contact" id="contact">
         <div className="contactText">
           <h3>Contact</h3>
           <p>
@@ -91,7 +92,11 @@ export default function Footer() {
           {messageSent && <p>Message sent successfully!</p>}
         </form>
       </div>
-      <p>Built by John Doe</p>
+      <p>
+        <AnchorLink to="/" title="Top of page">
+          Built by John Doe
+        </AnchorLink>
+      </p>
     </footer>
   )
 }
