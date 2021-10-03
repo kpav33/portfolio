@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 
 /* GENERAL */
+:root {
+  --test: hsl(0, 0%, 100%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -38,6 +42,18 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 40px auto;
+    /* Sticky header start, move into seperate class? */
+    position: fixed;
+    width: 1200px;
+    z-index: 100;
+}
+
+.headerScroll {
+  background: black;
+  margin: 0;
+  /* width: 100vw; */
+  align-items: center;
+  padding: 5px 10px;
 }
 
 header .links {
@@ -54,13 +70,13 @@ nav a {
     display: inline-block;
     margin-left: 20px;
     font-weight: 400;
-    padding-bottom: 8px;
+    /* padding-bottom: 8px; */
     border-bottom: 3px solid transparent;
 }
 
-nav a:hover {
+/* nav a:hover {
     border-color: white;
-}
+} */
 
 /* PARTICLES */
 .particles {

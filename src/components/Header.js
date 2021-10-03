@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import Particles from "react-tsparticles"
@@ -19,8 +19,26 @@ export default function Header() {
   // For particle animation background
   // https://www.npmjs.com/package/react-tsparticles
 
+  const [offsetY, setOffsetY] = useState(0)
+  function handleScroll() {
+    const position = window.pageYOffset
+    setOffsetY(position)
+  }
+  // console.log(offsetY)
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true })
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
+
+  const scrollClass = offsetY > 0 ? "headerScroll" : null
+  // console.log(scrollClass)
+
   return (
-    <header id="top">
+    <header id="top" className={scrollClass}>
       {/* Turn it into a sticky header? */}
       {/* <Particles className="particles" options={particlesOptionsObject} /> */}
       <h1>
