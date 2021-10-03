@@ -11,7 +11,8 @@
     justify-content: space-between;
     align-content: center;
     /* position: relative; */
-    padding-top: 120px;
+    padding-top: 150px;
+    /* background: var(--blue); */
 }
 
 .banner h2 {

@@ -48,7 +48,10 @@
     display: grid;
     grid-template: 1fr auto 1fr 1fr 1fr / auto;
     grid-gap: 10px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: var(--beige);
     padding: 15px 25px;
     align-content: center;
 }

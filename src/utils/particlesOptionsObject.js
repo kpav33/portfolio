@@ -42,7 +42,7 @@ export const particlesOptionsObject = {
       color: "#ffffff",
       distance: 150,
       enable: true,
-      opacity: 0.3,
+      opacity: 0.4,
       width: 1,
     },
     collisions: {
@@ -64,7 +64,7 @@ export const particlesOptionsObject = {
       value: 40,
     },
     opacity: {
-      value: 0.3,
+      value: 0.5,
     },
     shape: {
       type: "circle",

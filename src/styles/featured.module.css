@@ -16,8 +16,15 @@
     align-self: center;
 }
 
+.featuredProject:nth-child(odd) {
+    background: var(--light-blue);
+}
+
+.featuredProject:nth-child(even) {
+    background: var(--blue);
+}
+
 .featuredProject {
-    background: lightsalmon;
     padding: 20px 40px;
     border-radius: 20px;
     display: grid;

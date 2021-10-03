@@ -1,7 +1,7 @@
 .about {
     margin: 0 auto;
     max-width: 800px;
-    background: lightsteelblue;
+    background: var(--beige);
     padding: 20px 40px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
