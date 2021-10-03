@@ -2,11 +2,14 @@ import React from "react"
 import { Link } from "gatsby"
 // import Img from "gatsby-image"
 import { StaticImage } from "gatsby-plugin-image"
-import { banner, btn, text, image } from "../styles/home.module.css"
+import { banner, btn, text, image, particles } from "../styles/home.module.css"
+import Particles from "react-tsparticles"
+import { particlesOptionsObject } from "../utils/particlesOptionsObject"
 
 export default function Banner() {
   return (
     <section className={banner}>
+      <Particles className={particles} options={particlesOptionsObject} />
       <div className={text}>
         <h2>John Doe</h2>
         <h3>Web Developer</h3>
