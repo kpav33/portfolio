@@ -27,6 +27,11 @@ export default function Header() {
   // console.log(offsetY)
 
   useEffect(() => {
+    const position = window.pageYOffset
+    setOffsetY(position)
+  }, [])
+
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true })
 
     return () => {

@@ -82,7 +82,7 @@ export default function FeaturedProjects() {
       {nodes.map(project => (
         <div className={featuredProject} key={project.id}>
           <h3 className={name}>{project.frontmatter.title}</h3>
-          <p className={description}>{project.frontmatter.description}</p>
+          <p className={description}>Featured project descriptive title</p>
           <p className={additional}>{project.frontmatter.description}</p>
           <div className={imageStyle}>
             <GatsbyImage

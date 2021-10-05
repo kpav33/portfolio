@@ -37,7 +37,11 @@ p {
 }
 
 .content > section {
-  margin-bottom: 75px;
+  margin-bottom: 150px;
+}
+
+h2 {
+  font-size: 40px;
 }
 
 /* HEADER */
