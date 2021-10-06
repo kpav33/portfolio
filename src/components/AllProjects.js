@@ -178,7 +178,7 @@ export default function AllProjects() {
               <GatsbyImage
                 image={getImage(project.frontmatter.image)}
                 alt="Banner"
-                style={{ width: "300px", height: "250px" }}
+                style={{ width: "100%", height: "250px" }}
               />
               <p>
                 {project.frontmatter.description}

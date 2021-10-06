@@ -1,10 +1,10 @@
 ---
 title: "REST Countries API"
-description: "App description here"
+description: "Display all countries and their information. Created with REST Countries API."
 sourceCodeURL: "https://github.com/kpav33/rest-countries-api"
 liveURL: "https://kpav33.github.io/rest-countries-api/"
-technologies: ["React", "Styled Components", "React Testing Library"]
-slug: "rest-countries-aou"
+technologies: ["React", "React Router", "Styled Components", "React Testing Library"]
+slug: "rest-countries-api"
 date: "2021-08-02T00:00:00+00:00"
 image: "../images/thumbs/coffee.png"
 workInProgress: false

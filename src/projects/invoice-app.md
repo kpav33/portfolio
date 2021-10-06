@@ -1,9 +1,9 @@
 ---
 title: "Invoice App"
-description: "App description here"
+description: "An invoicing application, that allows you to create, read, update and delete invoices."
 sourceCodeURL: "https://github.com/kpav33/invoice-app"
 liveURL: "https://kpav33-inovice-app.netlify.app/"
-technologies: ["React", "Styled Components"]
+technologies: ["React", "React Router", "Styled Components"]
 slug: "invoice-app"
 date: "2021-08-23T00:00:00+00:00"
 image: "../images/thumbs/coffee.png"

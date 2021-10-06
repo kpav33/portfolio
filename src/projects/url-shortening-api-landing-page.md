@@ -1,9 +1,9 @@
 ---
 title: "URL Shortening API Landing Page"
-description: "App description here"
+description: "App integrated with shrtcode API to create shortened URLs and display them on the site."
 sourceCodeURL: "https://github.com/kpav33/url-shortening-api-landing-page"
 liveURL: "https://kpav33.github.io/url-shortening-api-landing-page/"
-technologies: ["React", "Sass"]
+technologies: ["React", "React Router", "Sass"]
 slug: "url-shortening-api-landing-page"
 date: "2021-07-1T00:00:00+00:00"
 image: "../images/thumbs/coffee.png"
