@@ -24,7 +24,7 @@
 }
 
 .technologyFilter {
-    max-width: 500px;
+    max-width: 750px;
     margin: 0 auto;
     /* display: grid;
     grid-template: auto / 1fr 1fr 1fr;
@@ -56,10 +56,14 @@ button:hover {
     opacity: 0.8;
 }
 
-button > img {
-    /* width: 40px;
-    height: 40px; */
+button:focus, button:active {
+    opacity: 0.5;
 }
+
+/* button > img {
+    width: 40px;
+    height: 40px;
+} */
 
 button > span {
     /* margin-bottom: 5px; */
