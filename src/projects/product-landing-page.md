@@ -1,5 +1,5 @@
 ---
-title: "Lord of the Rings Soundtrack Product Landing Page"
+title: "Soundtrack Product Landing Page"
 description: "A product landing page for a fake Lord of the Rings movie soundtrack music recordings."
 sourceCodeURL: "https://github.com/kpav33/product-landing-page"
 liveURL: "https://kpav33.github.io/product-landing-page/"

@@ -194,7 +194,15 @@ export default function AllProjects() {
               </div>
               <div className={technologyCards}>
                 {project.frontmatter.technologies.map((item, index) => (
-                  <div key={index}>{item}</div>
+                  <div key={index}>
+                    <img
+                      width="35px"
+                      height="35px"
+                      src={technologyImage(item)}
+                      alt={item}
+                      title={item}
+                    />
+                  </div>
                 ))}
               </div>
             </div>
@@ -223,4 +231,37 @@ export default function AllProjects() {
       </div>
     </section>
   )
+}
+
+function technologyImage(name) {
+  switch (name) {
+    case "React":
+      return ReactLogo
+    case "React Router":
+      return ReactRouterLogo
+    case "React Testing Library":
+      return ReactTestingLogo
+    case "Styled Components":
+      return StyledLogo
+    case "Gatsby":
+      return GatsbyLogo
+    case "TypeScript":
+      return TypeScriptLogo
+    case "JavaScript":
+      return JavaScriptLogo
+    case "HTML":
+      return HtmlLogo
+    case "CSS":
+      return CssLogo
+    case "Sass":
+      return SassLogo
+    case "Material UI":
+      return MaterialLogo
+    case "D3":
+      return D3Logo
+    case "WordPress":
+      return WordpressLogo
+    default:
+      return name
+  }
 }
