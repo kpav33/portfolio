@@ -178,7 +178,7 @@ export default function AllProjects() {
               <GatsbyImage
                 image={getImage(project.frontmatter.image)}
                 alt="Banner"
-                style={{ width: "100%", height: "250px" }}
+                style={{ width: "100%", height: "100%" }}
               />
               <p>
                 {project.frontmatter.description}
@@ -186,7 +186,11 @@ export default function AllProjects() {
               </p>
               <div className={projectLinks}>
                 <a href={project.frontmatter.liveURL}>Project live</a>
-                <a href={project.frontmatter.sourceCodeURL}>Source code</a>
+                {project.frontmatter.sourceCodeURL ? (
+                  <a href={project.frontmatter.sourceCodeURL}>Source code</a>
+                ) : (
+                  <p>Private Repo</p>
+                )}
               </div>
               <div className={technologyCards}>
                 {project.frontmatter.technologies.map((item, index) => (

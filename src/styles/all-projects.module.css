@@ -72,7 +72,7 @@ button > span {
 
 .projectsGrid {
     display: grid;
-    grid-template: auto / 1fr 1fr 1fr;
+    grid-template: auto /  repeat(3, minmax(0, 1fr));;
     grid-gap: 20px;
 }
 
@@ -104,6 +104,10 @@ button > span {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+
+.projectLinks > p {
+    margin: 0;
 }
 
 .technologyCards {
