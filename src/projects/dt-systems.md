@@ -6,7 +6,7 @@ liveURL: "https://www.dt-systems.eu/"
 technologies: ["WordPress"]
 slug: "dt-systems"
 date: "2020-10-03:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/dt-systems.png"
 workInProgress: false
 featured: false
 ---

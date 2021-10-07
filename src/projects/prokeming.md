@@ -6,7 +6,7 @@ liveURL: "https://www.prokeming.si/"
 technologies: ["WordPress"]
 slug: "prokeming"
 date: "2020-10-05:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/prokeming.png"
 workInProgress: false
 featured: false
 ---

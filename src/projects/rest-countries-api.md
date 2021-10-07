@@ -6,7 +6,7 @@ liveURL: "https://kpav33.github.io/rest-countries-api/"
 technologies: ["React", "React Router", "Styled Components", "React Testing Library"]
 slug: "rest-countries-api"
 date: "2021-08-02T00:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/countries.png"
 workInProgress: false
 featured: false
 ---

@@ -6,7 +6,7 @@ liveURL: "https://kpav33.github.io/tribute-page/"
 technologies: ["HTML", "CSS"]
 slug: "tribute-page"
 date: "2020-12-20T00:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/tribute-page.png"
 workInProgress: false
 featured: false
 ---

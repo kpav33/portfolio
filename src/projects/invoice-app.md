@@ -6,7 +6,7 @@ liveURL: "https://kpav33-inovice-app.netlify.app/"
 technologies: ["React", "React Router", "Styled Components"]
 slug: "invoice-app"
 date: "2021-08-23T00:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/invoice-app.png"
 workInProgress: true
 featured: true
 ---

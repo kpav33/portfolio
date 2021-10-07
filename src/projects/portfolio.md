@@ -6,7 +6,7 @@ liveURL: "https://kpav33-portfolio.netlify.app/"
 technologies: ["React", "Gatsby", "CSS", "JavaScript"]
 slug: "portfolio-website"
 date: "2021-09-25:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/portfolio.jpg"
 workInProgress: false
 featured: false
 ---

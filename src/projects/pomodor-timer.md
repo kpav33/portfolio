@@ -6,7 +6,7 @@ liveURL: "https://kpav33.github.io/pomodoro-timer/"
 technologies: ["React", "Sass", "Material UI", "JavaScript"]
 slug: "pomodoro-timer"
 date: "2021-06-23:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/pomodoro.jpg"
 workInProgress: false
 featured: false
 ---

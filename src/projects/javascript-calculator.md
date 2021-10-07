@@ -6,7 +6,7 @@ liveURL: "https://kpav33.github.io/javascript-calculator/"
 technologies: ["React", "Sass", "JavaScript"]
 slug: "javascript-calculator"
 date: "2021-06-10T00:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/calculator.jpg"
 workInProgress: false
 featured: false
 ---

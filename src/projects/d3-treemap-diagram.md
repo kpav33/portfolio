@@ -6,7 +6,7 @@ liveURL: "https://kpav33.github.io/d3-treemap-diagram/"
 technologies: ["D3", "HTML", "CSS", "JavaScript"]
 slug: "treemap-diagram"
 date: "2021-07-17:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/d3-treemap.png"
 workInProgress: false
 featured: false
 ---

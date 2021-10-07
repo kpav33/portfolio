@@ -6,7 +6,7 @@ liveURL: "https://kpav33.github.io/technical-documentation-page/"
 technologies: ["HTML", "CSS", "JavaScript"]
 slug: "technical-documenation-page"
 date: "2020-12-27T00:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/documentation.png"
 workInProgress: false
 featured: false
 ---

@@ -6,7 +6,7 @@ liveURL: "https://kpav33.github.io/todo-app/"
 technologies: ["React", "Styled Components", "React Testing Library"]
 slug: "todo-app"
 date: "2021-07-25T00:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/todo.jpg"
 workInProgress: false
 featured: false
 ---

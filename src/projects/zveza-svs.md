@@ -6,7 +6,7 @@ liveURL: "https://www.zveza-svs.si/"
 technologies: ["WordPress"]
 slug: "zveza-svs"
 date: "2020-10-07:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/zveza-svs.png"
 workInProgress: false
 featured: false
 ---

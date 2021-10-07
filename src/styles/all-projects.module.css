@@ -90,11 +90,23 @@ button > span {
     align-content: center;
 }
 
+/* .gatsby-image-wrapper {
+    width: 250px;
+    height: 250px;
+} */
+
+.container {
+    width: 100%;
+    height: 200px;
+
+}
+
 .projectCard > p{
     margin: 0;
     font-style: italic;
     text-align: justify;
     align-self: flex-start;
+
 }
 
 .projectCard > h3{
@@ -104,6 +116,10 @@ button > span {
 .projectCard * {
     align-self: center;
     justify-self: center;
+}
+
+.projectCard img {
+    object-position: top left;
 }
 
 .projectLinks {

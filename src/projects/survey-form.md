@@ -6,7 +6,7 @@ liveURL: "https://kpav33.github.io/survey-form/"
 technologies: ["HTML", "CSS"]
 slug: "survey-from"
 date: "2020-12-22T00:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/survey-form.png"
 workInProgress: false
 featured: false
 ---

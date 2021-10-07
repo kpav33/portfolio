@@ -6,7 +6,7 @@ liveURL: "https://kpav33.github.io/random-quote-machine/"
 technologies: ["React", "CSS", "JavaScript"]
 slug: "random-quote-machine"
 date: "2021-05-20T00:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/random-quote.png"
 workInProgress: false
 featured: false
 ---

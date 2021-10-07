@@ -6,7 +6,7 @@ liveURL: "https://kpav33.github.io/d3-scatterplot-graph/"
 technologies: ["D3", "HTML", "CSS", "JavaScript"]
 slug: "scatterplot-graph"
 date: "2021-07-13:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/d3-scatterplot.jpg"
 workInProgress: false
 featured: false
 ---

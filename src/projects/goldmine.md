@@ -6,7 +6,7 @@ liveURL: "https://goldminetoken.com/"
 technologies: ["React", "React Router", "Styled Components", "JavaScript"]
 slug: "goldmine"
 date: "2021-08-23:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/goldmine.png"
 workInProgress: false
 featured: false
 ---

@@ -6,7 +6,7 @@ liveURL: "https://kpav33.github.io/d3-heat-map/"
 technologies: ["D3", "HTML", "CSS", "JavaScript"]
 slug: "heat-map"
 date: "2021-07-14:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/d3-heat.png"
 workInProgress: false
 featured: false
 ---

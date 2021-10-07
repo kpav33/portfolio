@@ -6,7 +6,7 @@ liveURL: "https://kpav33-netflix-clone.netlify.app/"
 technologies: ["React", "React Router", "Styled Components", "JavaScript"]
 slug: "netflix-clone"
 date: "2021-10-03:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/netflix.png"
 workInProgress: false
 featured: false
 ---

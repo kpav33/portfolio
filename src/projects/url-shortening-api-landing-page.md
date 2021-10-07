@@ -6,7 +6,7 @@ liveURL: "https://kpav33.github.io/url-shortening-api-landing-page/"
 technologies: ["React", "React Router", "Sass"]
 slug: "url-shortening-api-landing-page"
 date: "2021-07-1T00:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/url-shortening.png"
 workInProgress: false
 featured: false
 ---

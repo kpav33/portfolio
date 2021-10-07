@@ -6,7 +6,7 @@ liveURL: "https://kpav33.github.io/markdown-previewer/"
 technologies: ["React", "Sass", "JavaScript"]
 slug: "markdown-previewer"
 date: "2021-05-25T00:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/markdown.png"
 workInProgress: false
 featured: false
 ---

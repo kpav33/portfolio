@@ -8,6 +8,7 @@ import {
   projectCard,
   projectLinks,
   technologyCards,
+  container,
 } from "../styles/all-projects.module.css"
 
 import ReactLogo from "../images/logos/react-logo.svg"
@@ -175,11 +176,14 @@ export default function AllProjects() {
           .map(project => (
             <div className={projectCard} key={project.id}>
               <h3>{project.frontmatter.title}</h3>
-              <GatsbyImage
-                image={getImage(project.frontmatter.image)}
-                alt="Banner"
-                style={{ width: "100%", height: "100%" }}
-              />
+              <div className={container}>
+                <GatsbyImage
+                  image={getImage(project.frontmatter.image)}
+                  alt="Banner"
+                  style={{ width: "100%", height: "100%" }}
+                />
+              </div>
+
               <p>
                 {project.frontmatter.description}
                 {project.frontmatter.workInProgress && " Work in progress..."}

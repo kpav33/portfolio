@@ -6,7 +6,7 @@ liveURL: "https://kpav33.github.io/d3-bar-chart/"
 technologies: ["D3", "HTML", "CSS", "JavaScript"]
 slug: "bar-chart"
 date: "2021-07-08:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/d3-bar1.jpg"
 workInProgress: false
 featured: false
 ---

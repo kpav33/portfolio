@@ -6,7 +6,7 @@ liveURL: "https://kpav33.github.io/d3-choropleth-map/"
 technologies: ["D3", "HTML", "CSS", "JavaScript"]
 slug: "choropleth-map"
 date: "2021-07-15:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/d3-choropleth.png"
 workInProgress: false
 featured: false
 ---

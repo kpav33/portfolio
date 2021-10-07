@@ -6,7 +6,7 @@ liveURL: "https://kpav33.github.io/personal-portfolio/"
 technologies: ["HTML", "CSS"]
 slug: "personal-portfolio"
 date: "2021-01-03T00:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/simple-portfolio.png"
 workInProgress: false
 featured: false
 ---

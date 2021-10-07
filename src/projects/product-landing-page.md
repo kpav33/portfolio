@@ -6,7 +6,7 @@ liveURL: "https://kpav33.github.io/product-landing-page/"
 technologies: ["HTML", "CSS"]
 slug: "product-landing-page"
 date: "2020-12-28T00:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/product-landing-page.png"
 workInProgress: false
 featured: false
 ---

@@ -6,7 +6,7 @@ liveURL: "https://kpav33.github.io/drum-machine/"
 technologies: ["React", "Sass", "Material UI", "JavaScript"]
 slug: "drum-machine"
 date: "2021-05-30T00:00:00+00:00"
-image: "../images/thumbs/coffee.png"
+image: "../images/thumbs/drum-machine.png"
 workInProgress: false
 featured: false
 ---
