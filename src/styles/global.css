@@ -114,12 +114,6 @@ nav a:hover {
 }
 
 /* FOOTER */
-/* footer p {
-    text-align: center;
-    color: #bbb;
-    margin: 40px auto;
-} */
-
 footer {
   display: flex;
   flex-direction: column;
@@ -166,6 +160,17 @@ input, textarea, button {
 
 button {
   width: 100px;
+  background: var(--beige);
+  border: none;
+  border-radius: 5px;
+  padding: 13px;
+  color: black;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  background: var(--dark-blue);
+  color: white;
 }
 
 input, textarea {
