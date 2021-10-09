@@ -3,7 +3,7 @@ title: "Netflix Clone"
 description: "A Netflix clone code along tutorial project by Karl Hadwen."
 sourceCodeURL: "https://github.com/kpav33/netflix-clone"
 liveURL: "https://kpav33-netflix-clone.netlify.app/"
-technologies: ["React", "React Router", "Styled Components", "JavaScript"]
+technologies: ["React", "React Router", "Firebase", "Styled Components", "JavaScript"]
 slug: "netflix-clone"
 date: "2021-10-03:00:00+00:00"
 image: "../images/thumbs/netflix.png"

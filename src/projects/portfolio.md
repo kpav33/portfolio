@@ -3,7 +3,7 @@ title: "Portfolio Website"
 description: "My portfolio website. This is the one you are currently on."
 sourceCodeURL: "https://github.com/kpav33/portfolio"
 liveURL: "https://kpav33-portfolio.netlify.app/"
-technologies: ["React", "Gatsby", "CSS", "JavaScript"]
+technologies: ["React", "Gatsby", "CSS Modules", "JavaScript"]
 slug: "portfolio-website"
 date: "2021-09-25:00:00+00:00"
 image: "../images/thumbs/portfolio.jpg"

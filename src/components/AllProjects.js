@@ -24,6 +24,8 @@ import JavaScriptLogo from "../images/logos/javascript-logo.svg"
 import MaterialLogo from "../images/logos/material-ui-logo.svg"
 import ReactRouterLogo from "../images/logos/react-router-logo.svg"
 import WordpressLogo from "../images/logos/wordpress-logo.svg"
+import CssModulesLogo from "../images/logos/css-modules-logo.svg"
+import FirebaseLogo from "../images/logos/firebase-logo.svg"
 
 export default function AllProjects() {
   const data = useStaticQuery(graphql`
@@ -66,8 +68,7 @@ export default function AllProjects() {
       <h2>All Projects</h2>
       <p>
         Below are listed all of the projects that I have completed so far. Click
-        on a technology button to only see the projects where that technology
-        was used.
+        on a tool button to only see the projects where that tool was used.
       </p>
       <div className={technologyFilter}>
         <button onClick={() => setFilter("WordPress")}>
@@ -97,7 +98,10 @@ export default function AllProjects() {
           />
           <span>React Router</span>
         </button>
-
+        <button onClick={() => setFilter("Firebase")}>
+          <img width="35px" height="35px" src={FirebaseLogo} alt={"Firebase"} />
+          <span>Firebase</span>
+        </button>
         <button onClick={() => setFilter("Gatsby")}>
           <img width="35px" height="35px" src={GatsbyLogo} alt={"Gatsby"} />
           <span>Gatsby</span>
@@ -131,6 +135,15 @@ export default function AllProjects() {
             alt={"Styled Components"}
           />
           <span>Styled Components</span>
+        </button>
+        <button onClick={() => setFilter("CSS Modules")}>
+          <img
+            width="35px"
+            height="35px"
+            src={CssModulesLogo}
+            alt={"CSS Modules"}
+          />
+          <span>CSS Modules</span>
         </button>
         <button onClick={() => setFilter("Sass")}>
           <img width="35px" height="35px" src={SassLogo} alt={"Sass"} />
@@ -186,7 +199,9 @@ export default function AllProjects() {
 
               <p>
                 {project.frontmatter.description}
-                {project.frontmatter.workInProgress && " Work in progress..."}
+                {project.frontmatter.workInProgress && (
+                  <strong>Work in progress...</strong>
+                )}
               </p>
               <div className={projectLinks}>
                 <a href={project.frontmatter.liveURL}>Project live</a>
@@ -253,10 +268,14 @@ function technologyImage(name) {
       return TypeScriptLogo
     case "JavaScript":
       return JavaScriptLogo
+    case "Firebase":
+      return FirebaseLogo
     case "HTML":
       return HtmlLogo
     case "CSS":
       return CssLogo
+    case "CSS Modules":
+      return CssModulesLogo
     case "Sass":
       return SassLogo
     case "Material UI":
