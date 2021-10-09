@@ -1,5 +1,7 @@
 import React, { useState } from "react"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
+import GithubLogo from "../images/logos/github-logo.inline.svg"
+import FreecodecampLogo from "../images/logos/freecodecamp-logo.inline.svg"
 
 function encode(data) {
   return Object.keys(data)
@@ -37,12 +39,17 @@ export default function Footer() {
         <div className="contactText">
           <h3>Contact</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus magnam, ex vero voluptas corrupti corporis esse
-            molestiae tenetur repellat eos, aliquam rem incidunt odio quis in
-            quas inventore pariatur possimus!
+            If you would like to get in touch with me, please send me a message
+            or reach out to me through any of my social media channels.
           </p>
-          <div>Social media icons</div>
+          <div className="socialIcons">
+            <a href="https://github.com/kpav33">
+              <GithubLogo />
+            </a>
+            <a href="https://forum.freecodecamp.org/u/kpav/summary">
+              <FreecodecampLogo />
+            </a>
+          </div>
         </div>
         <form
           className="contactForm"
@@ -92,11 +99,17 @@ export default function Footer() {
           {messageSent && <p>Message sent successfully!</p>}
         </form>
       </div>
-      <p>
-        <AnchorLink to="/" title="Top of page">
-          Built by John Doe
-        </AnchorLink>
-      </p>
+      <div className="footerInfo">
+        <p>
+          <AnchorLink to="/" title="Top of page">
+            Built by John Doe
+          </AnchorLink>
+        </p>
+        <p>
+          Images from <a href="https://drawkit.com/">DrawKit</a>, SVG icons from{" "}
+          <a href="https://www.svgrepo.com/">SVGRepo</a>.
+        </p>
+      </div>
     </footer>
   )
 }

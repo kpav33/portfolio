@@ -134,6 +134,30 @@ footer {
   /* align-self: center; */
 }
 
+.socialIcons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.socialIcons > a {
+  margin-right: 5px;
+}
+
+.socialIcons a > svg {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  top: 0;
+  transition: all ease 0.5s;
+}
+
+.socialIcons a > svg:hover {
+  cursor: pointer;
+  fill: white;
+  top: -3px;
+}
+
 /* CONTACT FORM */
 .contactForm {
   /* To do */
@@ -175,4 +199,31 @@ button:hover {
 
 input, textarea {
   margin-top: 5px;
+}
+
+.footerInfo {
+  margin: 60px auto 0px auto;
+  text-align: center;
+}
+
+.footerInfo p > a {
+  border-bottom: 1px solid black;
+  transition: all 0.5s ease;
+}
+
+.footerInfo p:first-child > a {
+  border-bottom: none;
+  transition: all 0.5s ease;
+}
+
+.footerInfo p > a:hover {
+  cursor: pointer;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.footerInfo p:first-child > a:hover {
+  cursor: pointer;
+  border-bottom: none;
+  color: white;
 }
