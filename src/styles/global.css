@@ -134,6 +134,14 @@ footer {
   /* align-self: center; */
 }
 
+.contactText > h3{
+  font-size: 28px;
+}
+
+.contactText > p{
+  margin: 12px 0px 16px 0px;
+}
+
 .socialIcons {
   display: flex;
   justify-content: flex-start;
