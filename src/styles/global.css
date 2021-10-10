@@ -184,13 +184,13 @@ footer {
   margin: 0;
 }
 
-input, textarea, button {
+.contactForm input, textarea, button {
   color: black;
   width: 100%;
   padding: 10px;
 }
 
-button {
+.contactForm button {
   width: 100px;
   background: var(--beige);
   border: none;
@@ -200,7 +200,7 @@ button {
   transition: all 0.5s ease;
 }
 
-button:hover {
+.contactForm button:hover {
   background: var(--dark-blue);
   color: white;
 }
