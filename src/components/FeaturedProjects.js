@@ -8,7 +8,6 @@ import {
   description,
   additional,
   imageStyle,
-  button,
 } from "../styles/featured.module.css"
 
 export default function FeaturedProjects() {
@@ -57,6 +56,8 @@ export default function FeaturedProjects() {
             workInProgress
             technologies
             featured
+            featuredTitle
+            featuredDescription
             image {
               childImageSharp {
                 gatsbyImageData(
@@ -82,14 +83,18 @@ export default function FeaturedProjects() {
       {nodes.map(project => (
         <div className={featuredProject} key={project.id}>
           <h3 className={name}>{project.frontmatter.title}</h3>
-          <p className={description}>Featured project descriptive title</p>
-          <p className={additional}>{project.frontmatter.description}</p>
+          <p className={description}>{project.frontmatter.featuredTitle}</p>
+          <p className={additional}>
+            {project.frontmatter.featuredDescription}
+          </p>
           <div className={imageStyle}>
-            <GatsbyImage
-              image={getImage(project.frontmatter.image)}
-              alt="Banner"
-              style={{ width: "300px", height: "250px" }}
-            />
+            <a href={project.frontmatter.liveURL}>
+              <GatsbyImage
+                image={getImage(project.frontmatter.image)}
+                alt={project.frontmatter.title}
+                style={{ width: "100%", height: "100%" }}
+              />
+            </a>
           </div>
           <a href={`${project.frontmatter.sourceCodeURL}#readme`}>Read more</a>
         </div>
