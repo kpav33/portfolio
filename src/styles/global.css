@@ -40,6 +40,16 @@ p {
   margin-bottom: 150px;
 }
 
+@media only screen and (max-width: 600px) {
+  /* .content > section:first-child {
+    margin-bottom: 150px;
+  } */
+  
+  .content > section {
+    margin-bottom: 100px;
+  }
+}
+
 h2 {
   font-size: 40px;
 }
@@ -54,6 +64,13 @@ header {
     width: 1200px;
     z-index: 100;
     transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    /* Create mobile hamburger menu! */
+    width: 100%;
+  }
 }
 
 .headerScroll {
@@ -121,11 +138,26 @@ footer {
   align-items: center;
 }
 
+@media only screen and (max-width: 600px) {
+  footer {
+    padding: 20px 20px 0px 20px;
+    background: var(--blue);
+    border-top: 2px solid var(--dark-blue);
+  }
+}
+
 .contact {
   display: grid;
   grid-template: 1fr / 1fr 1fr;
   grid-gap: 15px;
   /* width: 100%; */
+}
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    grid-template: auto / auto;
+    grid-gap: 40px;
+  }
 }
 
 .contactText {
@@ -134,18 +166,36 @@ footer {
   /* align-self: center; */
 }
 
-.contactText > h3{
+.contactText > h3 {
   font-size: 28px;
 }
 
-.contactText > p{
+@media only screen and (max-width: 600px) {
+  .contactText > h3 {
+    text-align: center;
+  }
+}
+
+.contactText > p {
   margin: 12px 0px 16px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contactText > p {
+    text-align: center;
+  }
 }
 
 .socialIcons {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .socialIcons {
+    justify-content: center;
+  }
 }
 
 .socialIcons > a {
@@ -212,6 +262,17 @@ input, textarea {
 .footerInfo {
   margin: 60px auto 0px auto;
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .footerInfo  {
+    margin-top: 30px;
+  }
+
+  .footerInfo > p {
+    margin: 8px 0px;
+    font-size: 13px;
+  }
 }
 
 .footerInfo p > a {
