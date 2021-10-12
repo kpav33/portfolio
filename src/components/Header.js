@@ -4,7 +4,7 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 import Particles from "react-tsparticles"
 import { particlesOptionsObject } from "../utils/particlesOptionsObject"
 
-export default function Header() {
+export default function Header({ width }) {
   const data = useStaticQuery(graphql`
     query SiteTitle {
       site {
@@ -49,20 +49,23 @@ export default function Header() {
       <h1>
         <AnchorLink to="/">John Doe</AnchorLink>
       </h1>
-      <nav className="links">
-        <AnchorLink to="/#about" title="About me">
-          About
-        </AnchorLink>
-        <AnchorLink to="/#featured" title="Featured Projects">
-          Featured Projects
-        </AnchorLink>
-        <AnchorLink to="/#allProjects" title="All Projects">
-          All Projects
-        </AnchorLink>
-        <AnchorLink to="/#contact" title="Contact">
-          Contact
-        </AnchorLink>
-      </nav>
+      {width > 600 && (
+        <nav className="links">
+          <AnchorLink to="/#about" title="About me">
+            About
+          </AnchorLink>
+          <AnchorLink to="/#featured" title="Featured Projects">
+            Featured Projects
+          </AnchorLink>
+          <AnchorLink to="/#allProjects" title="All Projects">
+            All Projects
+          </AnchorLink>
+          <AnchorLink to="/#contact" title="Contact">
+            Contact
+          </AnchorLink>
+        </nav>
+      )}
+      {width < 600 && <nav>Mobile menu</nav>}
     </header>
   )
 }

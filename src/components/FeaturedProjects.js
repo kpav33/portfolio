@@ -75,7 +75,7 @@ export default function FeaturedProjects() {
   `)
 
   const { nodes } = data.allMarkdownRemark
-  console.log(nodes)
+  // console.log(nodes)
 
   return (
     <section className={featured} id="featured">

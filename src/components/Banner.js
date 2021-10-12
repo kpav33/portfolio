@@ -6,10 +6,13 @@ import { banner, btn, text, image, particles } from "../styles/home.module.css"
 import Particles from "react-tsparticles"
 import { particlesOptionsObject } from "../utils/particlesOptionsObject"
 
-export default function Banner() {
+export default function Banner({ width }) {
   return (
     <section className={banner}>
-      <Particles className={particles} options={particlesOptionsObject} />
+      {/* Keep particles on mobile? */}
+      {width > 100 && (
+        <Particles className={particles} options={particlesOptionsObject} />
+      )}
       <div className={text}>
         <h2>John Doe</h2>
         <h3>Web Developer</h3>
@@ -19,9 +22,11 @@ export default function Banner() {
         </Link> */}
       </div>
       {/* <Img fluid={fluid} /> */}
-      <div className={image}>
-        <StaticImage src="../images/character-12.png" alt="Banner" />
-      </div>
+      {width > 600 && (
+        <div className={image}>
+          <StaticImage src="../images/character-12.png" alt="Banner" />
+        </div>
+      )}
 
       {/* <p>
           {title} - {description}

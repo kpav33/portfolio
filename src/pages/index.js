@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { graphql } from "gatsby"
 // import Img from "gatsby-image"
 import Layout from "../components/Layout"
@@ -12,10 +12,21 @@ export default function Home({ data }) {
   // console.log(data)
   // const { title, description } = data.site.siteMetadata
   // const { fluid } = data.file.childImageSharp.fluid
+  // Fix Gatsby SSR error when calling browser globals (window) in Node.js enviroment
+  const isBrowser = typeof window !== "undefined"
+
+  // Device width
+  const [width, setWidth] = useState(isBrowser ? window.innerWidth : 1200)
+
+  useEffect(() => {
+    window.addEventListener("resize", () => setWidth(window.innerWidth))
+  }, [width])
+
+  console.log(width)
 
   return (
-    <Layout>
-      <Banner />
+    <Layout width={width}>
+      <Banner width={width} />
       <About />
       <FeaturedProjects />
       <AllProjects />
