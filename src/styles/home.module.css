@@ -19,10 +19,24 @@
     font-size: 6em;
 }
 
+@media only screen and (max-width: 600px) {
+    .banner h2 {
+        text-align: center;
+        font-size: 3.5em;
+    }
+}
+
 .banner h3 {
     font-size: 3em;
     font-weight: 400;
     margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .banner h3 {
+        text-align: center;
+        font-size: 1.5em;
+    }
 }
   
 .btn {
@@ -40,6 +54,12 @@
     justify-content: center;
 }
 
+@media only screen and (max-width: 600px) {
+    .text {
+        width: 100%;
+    }
+}
+
 .image {
     width: 35%;
 } 
@@ -51,4 +71,11 @@
     max-width: 1920px;
     margin: 0 auto;
     max-height: 700px;
-  }
+}
+
+@media only screen and (max-width: 600px) {
+    .particles {
+        width: 100%;
+        height: 400px;
+    }
+}

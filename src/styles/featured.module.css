@@ -19,6 +19,7 @@
 @media only screen and (max-width: 600px) {
     .featured > h2 {
         font-size: 30px;
+        padding: 0px 20px;
     }
 }
 
