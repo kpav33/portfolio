@@ -22,7 +22,7 @@ export default function Home({ data }) {
     window.addEventListener("resize", () => setWidth(window.innerWidth))
   }, [width])
 
-  console.log(width)
+  // console.log(width)
 
   return (
     <Layout width={width}>

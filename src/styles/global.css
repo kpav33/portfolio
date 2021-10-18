@@ -62,7 +62,7 @@ header {
     /* Sticky header start, move into seperate class? */
     position: fixed;
     width: 1200px;
-    z-index: 100;
+    z-index: 1001;
     transition: all 0.3s ease;
 }
 
@@ -134,10 +134,103 @@ nav a {
     /* border-bottom: 3px solid transparent; */
 }
 
+@media only screen and (max-width: 600px) {
+  nav a {
+    display: inline-block;
+    font-weight: 400;
+    /* padding-bottom: 8px; */
+    padding: 8px;
+    /* border-bottom: 3px solid transparent; */
+    margin-left: 0px;
+    transition: color 300ms;
+    font-size: 22px;
+    margin-top: 10px;
+  }
+}
+
 nav a:hover {
     /* border-color: white; */
     background: hsla(219, 38%, 90%, 0.7);
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  nav a:hover {
+    /* border-color: white; */
+    background: none;
+    border-radius: none;
+    color: white;
+  }
+}
+
+
+/* MOBILE MENU */
+.mobileWrapper {
+  /* background: #d7d7d7;
+  height: 200vh; */
+  /* z-index: 105; */
+}
+
+.menuIcon {
+  position: fixed;
+  top: 8px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 1.5rem;
+  height: 2.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1005;
+}
+
+.menuIcon:active, .menuIcon:focus, .menuIcon:hover {
+  opacity: 1;
+}
+
+.menuIcon div {
+  width: 1.5rem;
+  height: 0.2rem;
+  background: black;
+  border-radius: 5px;
+  transform-origin: 1px;
+  position: relative;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.mobileClicked div:first-child {
+  transform: rotate(38deg);
+  /* opacity: 0; */
+
+}
+
+.mobileClicked div:nth-child(2) {
+  opacity: 0;
+  /* transform: rotate(45deg); */
+}
+
+.mobileClicked div:nth-child(3) {
+  transform: rotate(-36deg);
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+  /* background: rgba(154, 214, 213, 0.5); */
+  background: rgba(63, 114, 175, 0.7);
+  /* position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(100%); */
 }
 
 /* PARTICLES */
@@ -145,6 +238,10 @@ nav a:hover {
   position: absolute;
   inset: 0px;
 }
+
+/* .particles canvas {
+  pointer-events: none;
+} */
 
 /* FOOTER */
 footer {
