@@ -14,12 +14,14 @@
     letter-spacing: 1.3px;
     /* margin-bottom: 20px; */
     align-self: center;
+    font-size: 30px;
+    padding: 0px 20px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
     .featured > h2 {
-        font-size: 30px;
-        padding: 0px 20px;
+        font-size: 40px;
+        padding: 0px;
     }
 }
 
@@ -32,28 +34,43 @@
 }
 
 .featuredProject {
-    padding: 30px 40px;
-    border-radius: 20px;
+    /* padding: 30px 40px;
+    border-radius: 20px; */
+    border-radius: 0px;
+    padding: 20px;
     display: grid;
     grid-template: auto / 1fr 1fr;
     grid-template-areas: 
                     "name name"
+                    "description description"
+                    "additional additional"
+                    "image image"
+                    "button button"; 
+    /* grid-template-areas: 
+                    "name name"
                     "description image"
                     "additional image"
-                    "button image";
+                    "button image"; */
     grid-gap: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
     .featuredProject {
-        border-radius: 0px;
+        padding: 30px 40px;
+        border-radius: 20px;
+        grid-template-areas: 
+                    "name name"
+                    "description image"
+                    "additional image"
+                    "button image";
+        /* border-radius: 0px;
         padding: 20px;
         grid-template-areas: 
                     "name name"
                     "description description"
                     "additional additional"
                     "image image"
-                    "button button";
+                    "button button"; */
     }
 }
 
@@ -105,7 +122,8 @@
     grid-area: button;
     color: white;
     background: var(--dark-blue);
-    justify-self: flex-start;
+    /* justify-self: flex-start; */
+    justify-self: center;
     align-self: flex-end;
     padding: 12px 14px;
     border-radius: 8px;
@@ -113,9 +131,10 @@
     transition: all 0.5s ease;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
     .featuredProject > a {
-        justify-self: center;
+        /* justify-self: center; */
+        justify-self: flex-start;
     }
 }
 
