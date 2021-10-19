@@ -179,11 +179,11 @@ nav a:hover {
 
 
 /* MOBILE MENU */
-.mobileWrapper {
-  /* background: #d7d7d7;
-  height: 200vh; */
-  /* z-index: 105; */
-}
+/* .mobileWrapper {
+  background: #d7d7d7;
+  height: 200vh;
+  z-index: 105;
+} */
 
 .menuIcon {
   position: fixed;
