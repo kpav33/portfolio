@@ -11,7 +11,12 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     "gatsby-plugin-image",
-    "gatsby-plugin-anchor-links",
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -100,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
