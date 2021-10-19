@@ -14,7 +14,7 @@ export default function Banner({ width }) {
         <Particles className={particles} options={particlesOptionsObject} />
       )}
       <div className={text}>
-        <h2>John Doe</h2>
+        <h2>Klemen Pavlovič</h2>
         <h3>Web Developer</h3>
         {/* <p>UX designer &amp; web developer based in Machester.</p> */}
         {/* <Link className={btn} to="/projects">

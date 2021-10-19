@@ -8,8 +8,8 @@ export default function About() {
       {/* Maybe add some subheaders depending on the paragraph text */}
       <h3>Who am I?</h3>
       <p>
-        Hello, I am John Doe, a self-taught web developer from Slovenia. I
-        studied Informatics at Higher Vocational College in Novo mesto, which
+        Hello, I am Klemen Pavlovič, a self-taught web developer from Slovenia.
+        I studied Informatics at Higher Vocational College in Novo mesto, which
         gave me a base of computer related knowledge and for the past year I
         have been additionaly studying about web development on my own.
       </p>

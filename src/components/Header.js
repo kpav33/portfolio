@@ -52,7 +52,7 @@ export default function Header({ width }) {
         {/* Turn it into a sticky header? */}
         {/* <Particles className="particles" options={particlesOptionsObject} /> */}
         <h1 onClick={() => setShowMobileMenu(false)}>
-          <AnchorLink to="/">John Doe</AnchorLink>
+          <AnchorLink to="/">Klemen Pavlovič</AnchorLink>
         </h1>
         {width > 600 && (
           <nav className="links">

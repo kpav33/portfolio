@@ -102,12 +102,13 @@ export default function Footer() {
       <div className="footerInfo">
         <p>
           <AnchorLink to="/" title="Top of page">
-            Built by John Doe
+            Built by Klemen Pavlovič
           </AnchorLink>
         </p>
         <p>
           Images from <a href="https://drawkit.com/">DrawKit</a>, SVG icons from{" "}
-          <a href="https://www.svgrepo.com/">SVGRepo</a>.
+          <a href="https://www.svgrepo.com/">SVGRepo</a>, favicon created on{" "}
+          <a href="https://favicon.io/">favicon.io</a>.
         </p>
       </div>
     </footer>

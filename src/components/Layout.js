@@ -11,9 +11,9 @@ export default function Layout({ children, width }) {
       <Helmet>
         <html lang="en" />
         <meta charSet="utf-8" />
-        <meta name="description" content="John Doe portfolio website" />
+        <meta name="description" content="Klemen Pavlovič portfolio website" />
         <link rel="icon" type="image/png" href={favicon} sizes="32x32" />
-        <title>John Doe</title>
+        <title>Klemen Pavlovič</title>
       </Helmet>
       <Header width={width} />
       <div className="content">{children}</div>
