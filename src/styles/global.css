@@ -223,10 +223,11 @@ nav a:hover {
   text-align: center;
   height: 100vh;
   width: 100%;
-  position: relative;
+  /* position: relative; */
+  position: fixed;
   z-index: 1000;
   /* background: rgba(154, 214, 213, 0.5); */
-  background: rgba(63, 114, 175, 0.7);
+  background: rgba(63, 114, 175, 1);
   /* position: absolute;
   top: 0;
   right: 0;

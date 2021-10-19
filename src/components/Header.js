@@ -51,7 +51,7 @@ export default function Header({ width }) {
       <header id="top" className={scrollClass}>
         {/* Turn it into a sticky header? */}
         {/* <Particles className="particles" options={particlesOptionsObject} /> */}
-        <h1>
+        <h1 onClick={() => setShowMobileMenu(false)}>
           <AnchorLink to="/">John Doe</AnchorLink>
         </h1>
         {width > 600 && (
@@ -97,16 +97,20 @@ export default function Header({ width }) {
           {showMobileMenu && (
             <nav className="mobileNav">
               <AnchorLink to="/#about" title="About me">
-                About
+                <span onClick={() => setShowMobileMenu(false)}>About</span>
               </AnchorLink>
               <AnchorLink to="/#featured" title="Featured Projects">
-                Featured Projects
+                <span onClick={() => setShowMobileMenu(false)}>
+                  Featured Projects
+                </span>
               </AnchorLink>
               <AnchorLink to="/#allProjects" title="All Projects">
-                All Projects
+                <span onClick={() => setShowMobileMenu(false)}>
+                  All Projects
+                </span>
               </AnchorLink>
               <AnchorLink to="/#contact" title="Contact">
-                Contact
+                <span onClick={() => setShowMobileMenu(false)}>Contact</span>
               </AnchorLink>
             </nav>
           )}
