@@ -1,6 +1,6 @@
 ---
 title: "D3 Treemap Diagram"
-description: "A treemap of highest grossing movies by their worldwide revenue, seperated by movie categories."
+description: "A treemap of highest grossing movies by their worldwide revenue, separated by movie categories."
 sourceCodeURL: "https://github.com/kpav33/d3-treemap-diagram"
 liveURL: "https://kpav33.github.io/d3-treemap-diagram/"
 technologies: ["D3", "HTML", "CSS", "JavaScript"]

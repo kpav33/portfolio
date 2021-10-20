@@ -67,8 +67,8 @@ export default function AllProjects() {
     <section className={allProjects} id="allProjects">
       <h2>All Projects</h2>
       <p>
-        Below are listed all of the projects that I have completed so far. Click
-        on a tool button to only see the projects where that tool was used.
+        Below are all the projects that I have completed so far. Click on a tool
+        button to only see the projects where I used that particular tool.
       </p>
       <div className={technologyFilter}>
         <button onClick={() => setFilter("WordPress")}>

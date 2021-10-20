@@ -1,8 +1,8 @@
 ---
 title: "Portfolio Website"
-description: "My portfolio website. This is the one you are currently on."
+description: "My portfolio website. You are on this website now."
 sourceCodeURL: "https://github.com/kpav33/portfolio"
-liveURL: "https://kpav33-portfolio.netlify.app/"
+liveURL: "https://klemenpavlovic.com/"
 technologies: ["React", "Gatsby", "CSS Modules", "JavaScript"]
 slug: "portfolio-website"
 date: "2021-09-25:00:00+00:00"

@@ -1,6 +1,6 @@
 ---
 title: "D3 Heat Map"
-description: "A heat map of monthly global land-surface temeperature for years 1753 - 2015."
+description: "A heat map of monthly global land-surface temperature for years 1753 - 2015."
 sourceCodeURL: "https://github.com/kpav33/d3-heat-map"
 liveURL: "https://kpav33.github.io/d3-heat-map/"
 technologies: ["D3", "HTML", "CSS", "JavaScript"]

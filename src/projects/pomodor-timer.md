@@ -1,6 +1,6 @@
 ---
 title: "Pomodoro Timer"
-description: "A pomodoro timer to use with the pomodoro time management technique, to be more productive."
+description: "A pomodoro timer to use with the pomodoro time management technique, for greater productivity."
 sourceCodeURL: "https://github.com/kpav33/pomodoro-timer"
 liveURL: "https://kpav33.github.io/pomodoro-timer/"
 technologies: ["React", "Sass", "Material UI", "JavaScript"]

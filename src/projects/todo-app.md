@@ -1,6 +1,6 @@
 ---
-title: "Todo App"
-description: "Classic todo app, with added drag and drop functionality to reorder items on the todo items list."
+title: "To Do App"
+description: "Classic To Do app, with added drag and drop functionality to reorder items on the To Do items list."
 sourceCodeURL: "https://github.com/kpav33/todo-app"
 liveURL: "https://kpav33.github.io/todo-app/"
 technologies: ["React", "Styled Components", "React Testing Library"]
