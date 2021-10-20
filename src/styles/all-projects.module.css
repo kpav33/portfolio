@@ -1,7 +1,7 @@
+/* || ALL PROJECTS SECTION */
 .allProjects {
     margin: 0px 10px;
     max-width: 1200px;
-    /*padding: 20px 40px;*/
     display: grid;
     grid-template: auto / auto;
     grid-gap: 15px;
@@ -19,8 +19,6 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1.3px;
-    /* margin-bottom: 20px; */
-    /* align-self: center; */
     font-size: 30px;
     padding: 0px 10px;
 }
@@ -34,14 +32,12 @@
 
 .allProjects > p {
     text-align: center;
-    /* width: 600px; */
     width: 100%;
     margin: 0 auto;
 }
 
 @media only screen and (min-width: 600px) {
     .allProjects > p {
-       /* width: 100%; */
        width: 600px;
     }
 }
@@ -49,9 +45,6 @@
 .technologyFilter {
     max-width: 850px;
     margin: 0 auto;
-    /* display: grid;
-    grid-template: auto / 1fr 1fr 1fr;
-    grid-gap: 10px; */
     display: flex;
 	flex-wrap: wrap-reverse;
 	justify-content: center;
@@ -64,7 +57,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* padding: 8px 10px; */
     padding: 5px;
     background: var(--beige);
     border: none;
@@ -77,7 +69,6 @@
 
 @media only screen and (min-width: 600px) {
     .technologyFilter > button {
-        /* padding: 5px; */
         padding: 8px 10px;
 
     }
@@ -92,51 +83,33 @@ button:focus, button:active {
     opacity: 0.5;
 }
 
-/* button > img {
-    width: 40px;
-    height: 40px;
-} */
-
 button > span {
-    /* margin-bottom: 5px; */
     margin-left: 5px;
 }
 
 .projectsGrid {
     display: grid;
-    /* grid-template: auto /  repeat(3, minmax(0, 1fr));
-    grid-gap: 20px; */
     grid-template: auto / auto;
     grid-gap: 10px;
 }
 
 @media only screen and (min-width: 600px) {
     .projectsGrid {
-        /* grid-template: auto / auto;
-        grid-gap: 10px; */
         grid-template: auto /  repeat(3, minmax(0, 1fr));
         grid-gap: 20px;
     }
 }
 
 .projectCard {
-    /* align-self: center;
-    justify-self: center; */
     display: grid;
     grid-template: 50px auto 80px 50px 50px / auto;
     grid-gap: 20px;
-    /* border: 2px solid black; */
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background: var(--beige);
     padding: 15px 25px;
     align-content: center;
 }
-
-/* .gatsby-image-wrapper {
-    width: 250px;
-    height: 250px;
-} */
 
 .container {
     width: 100%;
@@ -198,7 +171,6 @@ button > span {
     display: grid;
     grid-auto-flow: column;
     grid-gap: 8px;
-    /* grid-template: 1fr / 1fr 1fr 1fr; */
     justify-self: end;
     margin-top: 10px;
 }

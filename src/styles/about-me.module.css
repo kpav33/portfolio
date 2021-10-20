@@ -1,10 +1,8 @@
+/* || ABOUT ME SECTION */
 .about {
     margin: 0 auto;
     max-width: 800px;
     background: var(--beige);
-    /* padding: 30px 40px;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     border-radius: 0px;
     box-shadow: none;
     padding: 20px 20px;
@@ -12,9 +10,6 @@
 
 @media only screen and (min-width: 600px) {
     .about {
-        /* border-radius: 0px;
-        box-shadow: none;
-        padding: 20px 20px; */
         padding: 30px 40px;
         border-radius: 20px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

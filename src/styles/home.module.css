@@ -1,22 +1,13 @@
+/* || BANNER */
 .banner {
-    /* width: 100%; */
-    /* display: grid;
-    grid-template: 1fr / 1fr 1fr;
-    grid-gap: 40px;
-    align-items: center;
-    justify-content: space-between; */
-    /* justify-items: center; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    /* position: relative; */
     padding-top: 150px;
-    /* background: var(--blue); */
 }
 
 .banner h2 {
-    /* font-size: 6em; */
     text-align: center;
     font-size: 38px;
 }
@@ -75,7 +66,7 @@
     }
 }
 
-/* PARTICLES */
+/* || PARTICLES */
 .particles {
     position: absolute;
     inset: 0px;
