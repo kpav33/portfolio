@@ -9,6 +9,7 @@ import appleIcon from "../images/apple-touch-icon.png"
 export default function Layout({ children, width }) {
   return (
     <div className="layout">
+      {/* React Helmet HTML head setup */}
       <Helmet>
         <html lang="en" />
         <meta charSet="utf-8" />

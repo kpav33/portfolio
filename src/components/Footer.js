@@ -3,6 +3,7 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 import GithubLogo from "../images/logos/github-logo.inline.svg"
 import FreecodecampLogo from "../images/logos/freecodecamp-logo.inline.svg"
 
+// Use in Netlify form to encode body data
 function encode(data) {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -13,11 +14,12 @@ export default function Footer() {
   const [formState, setFormState] = useState({})
   const [messageSent, setMessageSent] = useState(false)
 
+  // Track users input and display it
   function handleChange(e) {
     setFormState({ ...formState, [e.target.name]: e.target.value })
   }
-  // console.log(formState)
 
+  // Handle form submit with Netlify forms
   function handleSubmit(e) {
     e.preventDefault()
     const form = e.target

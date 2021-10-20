@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { graphql } from "gatsby"
+// import { graphql } from "gatsby"
 // import Img from "gatsby-image"
 import Layout from "../components/Layout"
 import Banner from "../components/Banner"
@@ -18,11 +18,10 @@ export default function Home({ data }) {
   // Device width
   const [width, setWidth] = useState(isBrowser ? window.innerWidth : 1200)
 
+  // Check the width of the device
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth))
   }, [width])
-
-  // console.log(width)
 
   return (
     <Layout width={width}>

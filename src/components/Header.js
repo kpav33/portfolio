@@ -1,40 +1,39 @@
 import React, { useState, useEffect } from "react"
-import { graphql, useStaticQuery } from "gatsby"
+// import { graphql, useStaticQuery } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
-import Particles from "react-tsparticles"
-import { particlesOptionsObject } from "../utils/particlesOptionsObject"
 
 export default function Header({ width }) {
-  const data = useStaticQuery(graphql`
-    query SiteTitle {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query SiteTitle {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `)
   // const { title } = data.site.siteMetadata
   // console.log(particlesOptionsObject)
   // For particle animation background
   // https://www.npmjs.com/package/react-tsparticles
 
+  // Show or hide mobile menu
   const [showMobileMenu, setShowMobileMenu] = useState(false)
-  // console.log(showMobileMenu)
 
+  // Track Y offset
   const [offsetY, setOffsetY] = useState(0)
 
   function handleScroll() {
     const position = window.pageYOffset
     setOffsetY(position)
   }
-  // console.log(offsetY)
 
   useEffect(() => {
     const position = window.pageYOffset
     setOffsetY(position)
   }, [])
 
+  // Change header to sticky header if user is scrolling down and is no longer on top of the page
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true })
 
@@ -44,16 +43,14 @@ export default function Header({ width }) {
   }, [])
 
   const scrollClass = offsetY > 0 ? "headerScroll" : null
-  // console.log(scrollClass)
 
   return (
     <>
       <header id="top" className={scrollClass}>
-        {/* Turn it into a sticky header? */}
-        {/* <Particles className="particles" options={particlesOptionsObject} /> */}
         <h1 onClick={() => setShowMobileMenu(false)}>
           <AnchorLink to="/">Klemen Pavlovič</AnchorLink>
         </h1>
+        {/* Desktop Navigation menu */}
         {width > 600 && (
           <nav className="links">
             <AnchorLink to="/#about" title="About me">
@@ -70,19 +67,8 @@ export default function Header({ width }) {
             </AnchorLink>
           </nav>
         )}
-        {/* {width < 600 && (
-          <div className="mobileWrapper">
-            <button
-              className="menuIcon"
-              style={{ top: offsetY !== 0 ? "0px" : "8px" }}
-            >
-              <div />
-              <div />
-              <div />
-            </button>
-          </div>
-        )} */}
       </header>
+      {/* Mobile Navigation menu */}
       {width < 600 && (
         <div className="mobileWrapper">
           <button

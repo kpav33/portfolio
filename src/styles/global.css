@@ -444,3 +444,55 @@ input, textarea {
   border-bottom: none;
   color: white;
 }
+
+/* ERROR 404 */
+.error {
+  padding: 170px 30px 150px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.error > h2 {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.error > p {
+  margin: 0px 0px 15px 0px;
+}
+
+.error > hr {
+  width: 100%;
+  margin-bottom: 22px;
+  border: 0;
+  height: 1.5px;
+  background: black;
+}
+
+.error > a {
+  color: white;
+  background: var(--dark-blue);
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 500ms ease;
+}
+
+.error > a:hover {
+  color: var(--dark-blue);
+  background: white;
+}
+
+@media only screen and (min-width: 600px) {
+  .error > h2 {
+    font-size: 100px;
+  }
+
+  .error > hr {
+    width: 500px;
+    margin: 20px auto 40px auto;
+  }
+}

@@ -58,10 +58,9 @@ export default function AllProjects() {
   `)
 
   const { nodes } = data.allMarkdownRemark
-  // console.log(nodes)
 
+  // Filter by selected tool
   const [filter, setFilter] = useState("All")
-  // console.log(filter)
 
   return (
     <section className={allProjects} id="allProjects">
@@ -226,32 +225,12 @@ export default function AllProjects() {
               </div>
             </div>
           ))}
-        {/* <div className={projectCard}>
-          <h3>Project name</h3>
-          <div>Project image</div>
-          <p>Project description</p>
-          <div>Two buttons for project live and source code link</div>
-          <div>Technologies used</div>
-        </div>
-        <div className={projectCard}>
-          <h3>Project name</h3>
-          <div>Project image</div>
-          <p>Project description</p>
-          <div>Two buttons for project live and source code link</div>
-          <div>Technologies used</div>
-        </div>
-        <div className={projectCard}>
-          <h3>Project name</h3>
-          <div>Project image</div>
-          <p>Project description</p>
-          <div>Two buttons for project live and source code link</div>
-          <div>Technologies used</div>
-        </div> */}
       </div>
     </section>
   )
 }
 
+// Show appropriate image of the tool used based on the array of technologies from project markdown frontmatter
 function technologyImage(name) {
   switch (name) {
     case "React":
