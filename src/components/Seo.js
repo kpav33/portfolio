@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 import favicon from "../images/favicon-32x32.png"
-import appleIcon from "../images/apple-touch-icon.png"
+import appleIcon from "../../static/apple-touch-icon.png"
 
 export default function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -90,11 +90,18 @@ export default function SEO({ description, lang, meta, title }) {
     >
       <link rel="icon" type="image/png" href={favicon} sizes="32x32" />
       <link
-        href="../../apple-touch-icon.png"
+        href={appleIcon}
         rel="apple-touch-icon"
         type="image/png"
         sizes="180x180"
       />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+      />
+      <link rel="manifest" href="/site.webmanifest" />
     </Helmet>
   )
 }
