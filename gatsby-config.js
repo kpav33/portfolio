@@ -42,9 +42,12 @@ module.exports = {
     },
   ],
   siteMetadata: {
-    title: "Web Warrior",
-    description: "Web dev portfolio",
-    copyright: "This website is copyright 2021 Web Warrior",
-    contact: "me@webwarrior.com",
+    title: "Klemen Pavlovič",
+    description: "Klemen Pavlovič portfolio website",
+    copyright: "This website is copyright 2021 Klemen Pavlovič",
+    contact: "klemenpavlovic@gmail.com",
+    keywords: "Klemen Pavlovič, web development",
+    author: "Klemen Pavlovič",
+    image: "src/images/apple-touch-icon.png",
   },
 }
