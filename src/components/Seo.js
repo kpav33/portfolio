@@ -90,7 +90,7 @@ export default function SEO({ description, lang, meta, title }) {
     >
       <link rel="icon" type="image/png" href={favicon} sizes="32x32" />
       <link
-        href={appleIcon}
+        href="../../apple-touch-icon.png"
         rel="apple-touch-icon"
         type="image/png"
         sizes="180x180"
