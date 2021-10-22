@@ -48,6 +48,6 @@ module.exports = {
     contact: "klemenpavlovic@gmail.com",
     keywords: "Klemen Pavlovič, web development",
     author: "Klemen Pavlovič",
-    image: "../../static/apple-touch-icon.png",
+    image: "/apple-touch-icon.png",
   },
 }
