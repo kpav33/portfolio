@@ -30,6 +30,7 @@ import GraphQlLogo from "../images/logos/graphql-logo.svg"
 import MongoLogo from "../images/logos/mongo-logo.svg"
 import NodeLogo from "../images/logos/node-js-logo.svg"
 import ReduxLogo from "../images/logos/redux-logo.svg"
+import NextLogo from "../images/logos/next-js-logo.svg"
 
 export default function AllProjects() {
   const data = useStaticQuery(graphql`
@@ -107,6 +108,10 @@ export default function AllProjects() {
         <button onClick={() => setFilter("Redux")}>
           <img width="35px" height="35px" src={ReduxLogo} alt={"Redux"} />
           <span>Redux</span>
+        </button>
+        <button onClick={() => setFilter("Next")}>
+          <img width="35px" height="35px" src={NextLogo} alt={"Next.js"} />
+          <span>Next.js</span>
         </button>
         <button onClick={() => setFilter("React Router")}>
           <img
@@ -291,6 +296,8 @@ function technologyImage(name) {
       return NodeLogo
     case "Redux":
       return ReduxLogo
+    case "Next":
+      return NextLogo
     default:
       return name
   }
