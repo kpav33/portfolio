@@ -26,6 +26,10 @@ import ReactRouterLogo from "../images/logos/react-router-logo.svg"
 import WordpressLogo from "../images/logos/wordpress-logo.svg"
 import CssModulesLogo from "../images/logos/css-modules-logo.svg"
 import FirebaseLogo from "../images/logos/firebase-logo.svg"
+import GraphQlLogo from "../images/logos/graphql-logo.svg"
+import MongoLogo from "../images/logos/mongo-logo.svg"
+import NodeLogo from "../images/logos/node-js-logo.svg"
+import ReduxLogo from "../images/logos/redux-logo.svg"
 
 export default function AllProjects() {
   const data = useStaticQuery(graphql`
@@ -87,6 +91,22 @@ export default function AllProjects() {
             alt={"React Testing Library"}
           />
           <span>React Testing Library</span>
+        </button>
+        <button onClick={() => setFilter("GraphQl")}>
+          <img width="35px" height="35px" src={GraphQlLogo} alt={"GraphQl"} />
+          <span>GraphQl</span>
+        </button>
+        <button onClick={() => setFilter("Mongo")}>
+          <img width="35px" height="35px" src={MongoLogo} alt={"Mongo"} />
+          <span>Mongo DB</span>
+        </button>
+        <button onClick={() => setFilter("Node")}>
+          <img width="35px" height="35px" src={NodeLogo} alt={"Node"} />
+          <span>Node.js</span>
+        </button>
+        <button onClick={() => setFilter("Redux")}>
+          <img width="35px" height="35px" src={ReduxLogo} alt={"Redux"} />
+          <span>Redux</span>
         </button>
         <button onClick={() => setFilter("React Router")}>
           <img
@@ -263,6 +283,14 @@ function technologyImage(name) {
       return D3Logo
     case "WordPress":
       return WordpressLogo
+    case "GraphQl":
+      return GraphQlLogo
+    case "Mongo":
+      return MongoLogo
+    case "Node":
+      return NodeLogo
+    case "Redux":
+      return ReduxLogo
     default:
       return name
   }
